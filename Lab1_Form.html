@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+    <h1><u>REGISTRATION FORM</u></h1>
+    <form>
+    	<label > Name:
+    	 <input type="text"name="name" maxlength="25" placeholder="Enter your name" required>
+    	</label>
+
+    	<br><br>
+    	<label> Email : 
+    	<input type="text" name="email" value="test@example.com" required>
+    	</label>
+
+    	<br><br>
+    	<label> Password : </label>
+    	<input type="password" name="pwd" minlength="6" required >
+    	</label>
+
+    	<br><br>
+    	<label for="category"> Category : </label>
+    	<select id="category" name="category" required>
+            <option value="student">Student</option>
+            <option value="employee">Employee</option>
+            <option value="freelancer" selected>Freelancer</option>
+        </select>
+
+        <br><br>
+        <label for="Eventdate">Eventdate : </label>
+           <input type="date" name="Eventdate" id="Eventdate" required>
+
+        <br><br>
+        <b>Select number of tickets:</b>
+        <br>
+        <label for="tickets">1 Ticket</label>
+        <input type = "radio" name = "tickets" id="tickets" value = "ticket1" required>
+        <br>
+        <label for="tickets">2 Ticket </label>
+        <input type = "radio" name = "tickets" id="tickets" value = "ticket2" checked>
+        <br>
+        <label for="tickets">3 Ticket </label>
+        <input type = "radio" name = "tickets" id="tickets" value = "ticket3">
+         
+        <br><br> 
+        <label for="payment">Online Payment : </label>
+        <input type="checkbox" name="payment" id="payment" required><br><br>
+         
+        <label for="description">Note </label> <br>
+              <textarea rows = "5" cols = "50" name = "description" id="description" placeholder="Add your comment"></textarea>
+
+        <br><br> 
+        <input type = "submit" value = "submit">
+    </form>
+</body>
+</html>
